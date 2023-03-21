@@ -4,7 +4,6 @@
 
 ## 模型下载地址
 已上传huggingface models中，可以通过transformers调用。
-
 链接：https://huggingface.co/mxmax/Chinese_Chat_T5_Base
 
 ## 训练硬件和时间
