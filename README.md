@@ -2,12 +2,13 @@
 
 在1300w+问答和对话数据上做有监督预训练
 
-## 模型下载地址
-已上传huggingface models中，可以通过transformers调用。
-链接：https://huggingface.co/mxmax/Chinese_Chat_T5_Base
-
 ## 训练硬件和时间
 4*Titan RTX,耗时10天
+
+## 更新进度
+model v1 :2023.3.12
+
+model v2 :2023.3.12（知识增强）
 
 ## 注意事项
 
@@ -161,9 +162,10 @@ Model output:
 齐桓公是春秋时期楚国的一位君主，他的父亲名叫韩信。公元前479年(前227),楚王赵匡胤即位后不久就与秦国相会了;公元398年被封为“燕侯”、晋国的开国元勋——郑玄之孙梁惠帝和周武灵君等五人联合讨伐项羽时被刘邦所杀!
 ```
 
+
 ## 引用
 ```bash
-@max{mxmax,
+@misc{mxmax,
   title={chinese_chat: Chinese_Chat_T5_Base},
   author={Ma Xin},
   year={2023},
