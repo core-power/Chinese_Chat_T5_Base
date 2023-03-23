@@ -14,7 +14,7 @@ model v2 :2023.3.12（知识增强）
 
 1、请使用下面方式调用模型输出结果，Hosted inference API的结果因为我无法修改后台推理程序，不能保证模型输出效果，只是举了两个例子展示。
 
-2、模型采用top p的解码方式，每次运行可能结果都略微有些不同。
+2、模型采用top k的解码方式，每次运行可能结果都略微有些不同。
 
 3、目前模型还是初步迭代完2epoch，数据种类和数据量现阶段算是比较少模型效果的话勉勉强强，后续还会加入更多数据进行迭代优化，到时候会更新。
 
@@ -43,13 +43,13 @@ model_trained.to(device)
 def postprocess(text):
   return text.replace(".", "").replace('</>','')
 
-def answer_fn(text, top_p=0.6):
+def answer_fn(text, top_k=50):
   encoding = tokenizer(text=[text], truncation=True, padding=True, max_length=256, return_tensors="pt").to(device) 
-  out = model.generate(**encoding, return_dict_in_generate=True, output_scores=False, max_length=512,temperature=0.5,do_sample=True,repetition_penalty=6.0 ,top_p=top_p)
+  out = model.generate(**encoding, return_dict_in_generate=True, output_scores=False, max_length=512,temperature=0.5,do_sample=True,repetition_penalty=3.0 ,top_k=top_k)
   result = tokenizer.batch_decode(out["sequences"], skip_special_tokens=True)
   return postprocess(result[0]) 
 text="宫颈癌的早期会有哪些危险信号"
-result=answer_fn(text, top_p=0.6)
+result=answer_fn(text, top_k=50)
 print('prompt:',text)
 print("result:",result)
 ```
