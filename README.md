@@ -210,6 +210,15 @@ Model output:
 齐桓公是春秋时期楚国的一位君主，他的父亲名叫韩信。公元前479年(前227),楚王赵匡胤即位后不久就与秦国相会了;公元398年被封为“燕侯”、晋国的开国元勋——郑玄之孙梁惠帝和周武灵君等五人联合讨伐项羽时被刘邦所杀!
 ```
 
+## 联系方式
+![arch](微信好友二维码.jpg)
+加好友请备注：来自于huggingface网站交流技术+名字
+
+qq群：621725172
+
+本人知乎主页链接：https://www.zhihu.com/people/bing-shui-he-pan
+
+GitHub项目链接：https://github.com/core-power/Chinese_Chat_T5_Base
 
 ## 引用
 ```bash
