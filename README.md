@@ -54,7 +54,7 @@ def answer_fn(text, top_k=50):
   return postprocess(result[0]) 
 while True:
   text = input('请输入问题:')
-  result=answer_fn(text, sample=True, top_k=50)
+  result=answer_fn(text,  top_k=50)
   print("模型生成:",result)
   print('*'*100)
 ```
