@@ -43,7 +43,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 tokenizer = AutoTokenizer.from_pretrained("mxmax/Chinese_Chat_T5_Base")
 model = AutoModelForSeq2SeqLM.from_pretrained("mxmax/Chinese_Chat_T5_Base") 
 device = 'cuda' if cuda.is_available() else 'cpu'
-model_trained.to(device)
+model.to(device)
 def postprocess(text):
   return text.replace(".", "").replace('</>','')
 
