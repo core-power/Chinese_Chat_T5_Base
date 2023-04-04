@@ -14,6 +14,12 @@ model v3 :2023.3.24（感谢Belle 0.5m开源的指示学习数据）
 
 model v4 :2023.3.30（感谢Belle 1m开源的指示学习数据）
 
+##模型地址和作者个人博客地址
+
+本人知乎主页链接：https://www.zhihu.com/people/bing-shui-he-pan
+
+GitHub项目链接：https://github.com/core-power/Chinese_Chat_T5_Base
+
 ## 注意事项
 
 1、请使用下面方式调用模型输出结果，Hosted inference API的结果因为我无法修改后台推理程序，不能保证模型输出效果，只是举了两个例子展示。
@@ -39,6 +45,7 @@ model v4 :2023.3.30（感谢Belle 1m开源的指示学习数据）
 推理程序 t5_infer.py
 
 ```
+
 
 ## 模型推理
 
@@ -229,9 +236,6 @@ Model output:
 
 qq群：621725172
 
-本人知乎主页链接：https://www.zhihu.com/people/bing-shui-he-pan
-
-GitHub项目链接：https://github.com/core-power/Chinese_Chat_T5_Base
 
 ## 引用
 ```bash
