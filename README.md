@@ -14,11 +14,10 @@ model v3 :2023.3.24（感谢Belle 0.5m开源的指示学习数据）
 
 model v4 :2023.3.30（感谢Belle 1m开源的指示学习数据）
 
-## 模型地址和作者个人博客地址
+## 模型地址和原理解析
 
-本人知乎主页链接：https://www.zhihu.com/people/bing-shui-he-pan
-
-GitHub项目链接：https://github.com/core-power/Chinese_Chat_T5_Base
+本人知乎主页链接：https://zhuanlan.zhihu.com/p/619064661
+GitHub项目链接：https://huggingface.co/mxmax/Chinese_Chat_T5_Base
 
 ## 注意事项
 
