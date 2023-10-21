@@ -1,0 +1,5 @@
+sentencepiece==0.1.99
+nltk==3.8.1
+jsonlines==4.0.0
+accelerate==0.20.3
+transformers==4.34.1
